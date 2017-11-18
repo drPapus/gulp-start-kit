@@ -1,6 +1,17 @@
-body{
-    background-color:rgb(245, 187, 179);
-    @media (min-width: 400px) {
-        background-color:rgb(155, 155, 53);
-    }
+@font-face {
+    font-family: b52;
+    src: url('../fonts/b52.eot') format('eot'),
+        url('../fonts/b52.otf') format('opentype');
+}
+
+:root {
+    font-size: calc(1vw + 1vh + .5vmin);
+  }
+  body {
+    font: 0.7em/1.6 "Open Sans", sans-serif;
+  }
+
+.no-gutter {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }

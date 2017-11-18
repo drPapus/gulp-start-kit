@@ -1,0 +1,48 @@
+.site-info-block a{
+    color:#fff;
+}
+
+.header .top-bar {
+	background-color: #7a6652;
+}
+.navbar{
+	margin-bottom: initial;
+    border-bottom: 6px solid #494c58;
+    border-radius: 0;
+}
+
+.nav-top > li > a {
+	color: #494C58;
+	font-weight: 600;
+    line-height: 63px;
+    font-size: 1.5em;
+    font-family: 'b52', 'Arial', sans-serif;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: #494C58;
+	color:rgb(158, 167, 189);
+}
+
+.header .top-bar .site-info {
+    text-align: right;
+    color: #fff;
+	width: 60%;
+	margin-top:0.5rem; 
+}
+
+.header .top-bar .site-info span {
+	line-height: 2em;
+}
+
+.navbar-right {
+	margin-right: 20px;
+	margin-top: 55px;
+}
+
+.header .header-logo {
+    max-width: 300px;
+    text-align: center;
+    margin: 10px 0 10px 83px;
+    display: inline-block;
+}
