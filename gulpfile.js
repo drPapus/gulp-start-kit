@@ -4,9 +4,15 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
 var mmq = require('gulp-merge-media-queries');
+var del = require('del');
+var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
+var rigger = require('gulp-rigger');
 
 gulp.task('html',function(){
     return gulp.src('./src/*.html')
+    .pipe(rigger())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.reload({
         stream: true
@@ -32,7 +38,13 @@ gulp.task('css', function(){
 
 gulp.task('img', function(){
     return gulp.src('./src/img/**/*.+(png|jpg|gif|svg)')
+    .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'))
+});
+
+gulp.task('fonts', function(){
+    return gulp.src('./src/fonts/**/*.*')
+    .pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('watch', function(){
@@ -48,6 +60,10 @@ gulp.task('server', function(){
     });
 });
 
+gulp.task('del:dist', function(){
+    return del.sync('./dist');
+})
+
 gulp.task('build', ['html','css','img']);
 
-gulp.task('start',['build','server', 'watch']);
+gulp.task('start',['del:dist','build','server', 'watch']);
