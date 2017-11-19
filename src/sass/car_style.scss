@@ -1,0 +1,198 @@
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+button:focus {
+    outline: none;
+}
+.car_box {
+    position: relative;
+    margin: 0 auto;
+    height: 18rem;
+}
+.car {
+
+    position: relative;
+    height: 14rem;
+    left: 8rem;
+    top: 4rem;
+    border-radius: 10em;
+}
+
+.car_img {
+    width: 37rem;
+    position: relative;    
+}
+.wheel {
+    position: absolute;
+    top: 6rem;
+    left: 14rem;
+    width: 5rem;
+    height: 5rem;
+}
+.wheel-btn {
+    z-index: 2;
+    width: 20.3rem;
+}
+.list_transmition {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 5.5rem;
+    z-index: 2;
+}
+.wheel:hover .wheel-btn {
+    display: block;
+    position: absolute;
+    left: 0.1rem; 
+    filter: drop-shadow(0px 0px 10px red);
+}
+.wheel:hover .list_transmition {
+    display: block;
+}
+.engine {
+    position: absolute;
+    top: 3.69rem;
+    left: 2rem;
+    width: 15rem;
+    height: 2rem; 
+}
+.engine-btn {
+
+    display: none;    
+    width: 17rem;
+}
+.list_engine {
+    display: none;
+    position: absolute;
+    top: -2rem;
+    left: 9rem;
+}
+.engine:hover .engine-btn {
+    display: initial;
+    filter: drop-shadow(0px 0px 10px red);
+}
+.engine:hover .list_engine {
+    display: inherit;
+}
+.frontlight {
+    position: absolute;
+    top: 6.2rem;
+    left: 0.5rem;
+    width: 12rem;
+    height: 5rem;
+}
+    .fl-btn {
+    display: none;
+    width: 12.8rem;
+}
+.list_electric {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+}
+.frontlight:hover .fl-btn {
+    display: initial;
+    filter: drop-shadow(0px 0px 10px red);
+    
+}
+.frontlight:hover .list_electric {
+    display: block;
+}    
+.body {
+    position: absolute;
+    top: 0.88rem;
+    left: 22.3rem;
+    width: 15rem;
+    height: 8rem;
+    z-index: 1;
+}
+.body-btn {
+    display: none;
+    width: 14.7rem;
+}
+.list_body {
+    display: none;
+    position: absolute;
+    top: -2rem;
+    left: 3rem;
+}
+.body:hover .body-btn {
+    display: initial;
+    filter: drop-shadow(0px 0px 10px red);
+}
+.body:hover .list_body {
+    display: block;
+}
+.clean {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 17rem;
+    height: 17rem;
+}
+.clean-btn {
+    position: relative;
+    width: 17rem;
+}
+.list_clean {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    left: 9.5rem;
+    z-index: 10;  
+}
+
+.nav-pills > li > a {
+    border-radius: 0;
+}
+
+.clean:hover > .clean-btn, .clean-btn:hover {
+    display: initial;
+    filter: drop-shadow(0px 0px 10px red);
+}
+.clean:hover > .list_clean, .list_clean:hover {
+    display: block;    
+}
+#cleaning-girl:hover .list_clean {
+    display: block;    
+   
+}
+.drop-menu.btn.btn-default {
+    padding: 0 0;
+    opacity: 0.8;
+    border-radius: 0;
+}
+.drop-menu.nav.btn > li > a {
+    line-height: initial;
+}
+.drop-menu a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#car-section {
+    height: 400px;
+    margin-top:50px;
+}
+
+@media screen and (orientation:portrait) and (max-width:992px), screen and (orientation:landscape) and (max-width:768px) {
+    .car_box, .info-slider{
+        display: none;
+    }
+    #car-section {
+        height: 0px;
+    }
+}
+

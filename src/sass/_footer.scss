@@ -1,0 +1,61 @@
+/*footer*/
+#footer{
+	border-top: 4px solid #494c58;
+	background: #7a6652;
+	min-height: 200px;
+	padding: 20px 0 0;
+}
+
+#footer .footer-top .footer-heading {
+	font: 15px open sans,Helvetica Neue,Arial,sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 20px;
+	position: absolute;
+	left: 39px;
+}
+#footer .footer-top {
+	background: url(../img/un-map.png) 0 0 no-repeat;
+}
+.h5-divider {
+	background: #d82f26;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 40px;
+	height: 2px;
+}
+
+#footer .footer-wrk-hours, .footer-top ul li a {
+	color: #fff;
+}
+#footer ul {
+	margin-top: 30px;
+}
+
+#footer .footer-top ul li {
+	list-style: none;
+	margin-bottom: 10px;
+	color: #fff;
+}
+#footer .footer-top ul.footer-service-list-menu {
+	width: 50%;
+	float: left;
+}
+.contact-info-menu i{
+	margin-right: 5px;
+}
+#footer .footer-top .social-media {
+	display: block;
+	margin-left: 40px;
+}
+.social-media a {
+    display: inline-block;
+    float: left;
+    margin-right: 0.5em;
+    font-size: 2em;
+	color: #fff;
+}
+
+/*end footer*/
