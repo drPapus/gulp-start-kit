@@ -1,0 +1,35 @@
+<div class="container">
+    
+     <!-- Trigger the modal with a button -->
+     <button type="button" class="btn btn-info btn-lg pulse-button" data-toggle="modal" data-target="#myModal">Запись на сервис</button>
+    
+     <!-- Modal -->
+     <div class="modal fade" id="myModal" role="dialog">
+       <div class="modal-dialog modal-sm">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <form class="feedback-form" action="send.php" method="post">
+               <label for="lname">Имя</label>
+               <input type="text" id="lname" name="fio" placeholder="Ваше имя">
+               <label for="lname">Цель визита</label>
+               <input type="text" id="target" name="target" placeholder="Цель визита">
+               <label for="date">Желаемая дата и время визита</label><br>
+               <input type="datetime-local" id="date" name="date" placeholder="Желаемая дата визита"><br>
+               <label for="tel">Номер телефона</label><br>
+               <input type="tel" id="tel" name="phone" placeholder="Ваш номер телефона.."><br>
+               <label for="tel">Гос. номер автомобиля</label><br>
+               <input type="tel" id="tel" name="number_auto" placeholder="Гос. номер автомобиля"><br>
+               <label for="subject">Пожелания к визиту</label>
+               <textarea id="subject" name="extra" placeholder="Пожелания к визиту" ></textarea>
+               <br>
+               <input class="button" type="submit" value="ОТПРАВИТЬ">
+             </form>
+
+                     </div>
+                   </div>
+                 </div>
+               </div>
+      </div>
+    
+    

@@ -1,0 +1,20 @@
+#menu-carousel {
+    position:absolute; top:0; left:0; width:100%; display:none;}
+    /*dock styling...*/
+    /*...centre the dock...*/
+    #menu-carousel div.jqDockWrap {margin:0 auto;}
+    /*...set the cursor...*/
+    #menu-carousel div.jqDock {cursor:pointer;}
+    /*jigsaw piece styling...*/
+    .jigsaw {position:absolute; top:0; left:0; height:100%;}
+    /*...on hover, bring the jigsaw piece to the front...*/
+    img:hover {z-index:20 !important;}
+
+    .bmw-logo100x100, .fiat100x100
+    { display: inline-block; background: url('../img/tiny-logo/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+     
+    .bmw-logo100x100 { background-position: -5px -0px; width: 100px; height: 75px; }
+    .fiat100x100 { background-position: -5px -80px; width: 100px; height: 100px; }
+    body{
+        background: red;
+    }

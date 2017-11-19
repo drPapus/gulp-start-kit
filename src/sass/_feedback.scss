@@ -1,0 +1,93 @@
+  
+  /*MODAL WINDOW*/
+  #myDIV {
+      width: 50%;
+      position:absolute;
+      top:10em;
+      text-align: center;  
+  }
+  input, select, textarea {     
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+
+  input[type-date]{
+     width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      width:15%;
+      
+  }
+  
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+  
+  
+  
+  form{
+   width:100%;
+  }
+  .feedback-form label, input, textarea, select{
+    width:100%;
+  }
+  input[type=submit]{
+    width:9em;
+  }
+  
+  /*FIXED PULSE  BUTTON*/
+  .pulse-button {
+    position: fixed;
+    top: 80%;
+    right: 30%;
+   
+    
+    width: 240px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 0 #1f4c76;
+    border: 1px solid #3480c7;
+    box-shadow: 0 0 0 0 rgba(90, 153, 220, 0.7), inset 0 1px 0 #abcbe9;
+    border-radius: 6px;
+    vertical-align: middle;
+    background: #5a99d4;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6ea6d9), color-stop(100%, #468ccf));
+    background-image: -webkit-linear-gradient(#6ea6d9, #468ccf);
+    background-image: -moz-linear-gradient(#6ea6d9, #468ccf);
+    background-image: -o-linear-gradient(#6ea6d9, #468ccf);
+    background-image: linear-gradient(#6ea6d9, #468ccf);
+    cursor: pointer;
+    -webkit-animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  }
+  .pulse-button:hover {
+    -webkit-animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #abcbe9;
+    }
+  }
+  
+  
+  

@@ -47,6 +47,11 @@ gulp.task('fonts', function(){
     .pipe(gulp.dest('./dist/fonts'));
 });
 
+gulp.task('js', function(){
+    return gulp.src('./src/js/**/*.*')
+    .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('watch', function(){
     gulp.watch('./src/**/*.html', ['html']);
     gulp.watch('./src/sass/**/*.scss', ['css']);
